@@ -1,0 +1,70 @@
+body {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+.overlay {
+  display: none;
+}
+#container {
+  margin: 2em auto;
+  width: 505px;
+  height: 565px;
+  position: relative;
+  background: #b4ddb4;
+  background: -moz-linear-gradient(top, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4ddb4), color-stop(17%,#83c783), color-stop(33%,#52b152), color-stop(67%,#008a00), color-stop(83%,#005700), color-stop(100%,#002400));
+  background: -webkit-linear-gradient(top, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+  background: -o-linear-gradient(top, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+  background: -ms-linear-gradient(top, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+  background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+}
+h1 {
+  font-size: 3em;
+  line-height: 1.5em;
+  font-weight: bold;
+}
+section#gallery {
+  position: relative;
+  perspective: 350px;
+}
+div#carousel {
+  height: 300px;
+  position: relative;
+  width: auto;
+  margin: 1em;
+  transform-style: preserve-3d;
+  transition: transform 1s;;
+}
+div#carousel img {
+  display: block;
+  position: absolute;
+  height: 150px;
+  width: auto;
+  top: 60px;
+  left: 190px;
+  -webkit-box-reflect: below -50px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(40%, transparent), to(rgba(250, 250, 250, 0.2)));  
+}
+div#carousel img:nth-child(1) { transform: rotateY(0deg) translateZ(144px);}
+div#carousel img:nth-child(2) { transform: rotateY(72deg) translateZ(144px); }
+div#carousel img:nth-child(3) { transform: rotateY(144deg) translateZ(144px); }
+div#carousel img:nth-child(4) { transform: rotateY(216deg) translateZ(144px); }
+div#carousel img:nth-child(5) { transform: rotateY(288deg) translateZ(144px); }
+
+section#buttons {
+  margin: 1em;
+}
+button {
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  position: relative;
+}
+#btn-play {
+  padding-left: 3em;
+}
+.play-button {
+  height: 25px;
+  width: auto;
+  position: absolute;
+  top: 7px;
+  left: 10px;
+}
