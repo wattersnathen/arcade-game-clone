@@ -82,9 +82,8 @@ var SELECTCHARACTER = function() {
 
   var carousel = document.getElementById('carousel'),
       currentAngle = 0;
-
-  document.getElementById('btn-left').addEventListener('click', function() { rotate('-'); });
-  document.getElementById('btn-right').addEventListener('click', function() { rotate(''); });
+  document.getElementById('btn-left').addEventListener('click', () => rotate('-'), false);
+  document.getElementById('btn-right').addEventListener('click', () => rotate(''), false);
 
   // rotate the carousel left or right based on the 'dir' which is determined
   // by which button the user clicked (left or right).
@@ -133,8 +132,8 @@ var SELECTCHARACTER = function() {
       character = 'images/char-cat-girl.png';
     }
 
-    document.getElementById("btn-left").removeEventListener('click');
-    document.getElementById("btn-right").removeEventListener('click');
+    document.getElementById("btn-left").removeEventListener('click', () => {}, false);
+    document.getElementById("btn-right").removeEventListener('click', () => {}, false);
     
     return character;
   }
